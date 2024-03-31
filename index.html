@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        position: relative;
+        width: px;
+        height: 1080px;
+        background-image: url("img/avator_background.jpg");
+        background-size: cover; /* 背景图片铺满容器 */
+        border: 1px solid #ccc;
+      }
+      .avatar {
+        position: absolute;
+        top: 15%; /* 垂直居中 */
+        left: 30%; /* 水平居中 */
+        transform: translate(
+          -50%,
+          -50%
+        ); /* 将头像向左上方偏移自身宽高的一半，实现居中效果 */
+        width: 150px;
+        height: 150px;
+
+        border: 2px solid #fff;
+        overflow: hidden; /* 隐藏头像超出的部分 */
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 图片铺满头像容器 */
+      }
+      .board {
+        position: absolute;
+        top: 4%; /* 垂直居中 */
+        left: 20%; /* 水平居中 */
+        width: 960px;
+        height: 920px;
+        background-color: rgba(188, 207, 210, 0.7);
+      }
+      .name {
+        position: absolute;
+        top: 4%; /* 垂直居中 */
+        left: 25%; /* 水平居中 */
+        margin: 20px;
+      }
+    </style>
+    <title>mU盾</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="board">
+        <h1 class="name">mU盾</h1>
+        <del style="position: absolute; top: 12%; left: 28%"
+          >不是，哥们，你怎么找到这的</del
+        >
+        <p style="position: absolute; top: 13%; left: 28%">
+          见习电子与程序天师，正在炎国大荒城进修。
+        </p>
+      </div>
+      <div class="avatar">
+        <img src="img/avator.jpg" alt="头像" />
+      </div>
+    </div>
+  </body>
+</html>
